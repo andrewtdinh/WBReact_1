@@ -5,8 +5,9 @@ var StorePicker = React.createClass({
 
   render: function(){
     return (
-      <p>hello</p>
+    	<form>
 
+    	</form>
     )
   }
 
