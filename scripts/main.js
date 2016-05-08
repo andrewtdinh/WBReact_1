@@ -12,7 +12,6 @@ var StorePicker = React.createClass({
     	</form>
     )
   }
-
 });
 
 ReactDOM.render(<StorePicker/>, document.querySelector('#main'));
