@@ -1,6 +1,29 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+/*
+	App
+*/
+
+var App = React.createClass({
+	render: function(){
+		return (
+			<div className='catch-of-the-day'>
+				<div className='menu'>
+					<Header />
+					<Fish />
+					<Fish />
+					<Fish />
+					<Fish />
+					<Fish />
+				</div>
+				<Order />
+				<Inventory />
+			</div>
+		)
+	}
+});
+
 var StorePicker = React.createClass({
 
   render: function(){
