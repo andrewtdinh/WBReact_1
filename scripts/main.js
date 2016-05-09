@@ -11,11 +11,6 @@ var App = React.createClass({
 			<div className='catch-of-the-day'>
 				<div className='menu'>
 					<Header />
-					<Fish />
-					<Fish />
-					<Fish />
-					<Fish />
-					<Fish />
 				</div>
 				<Order />
 				<Inventory />
@@ -37,4 +32,4 @@ var StorePicker = React.createClass({
   }
 });
 
-ReactDOM.render(<StorePicker/>, document.querySelector('#main'));
+ReactDOM.render(<App/>, document.querySelector('#main'));
