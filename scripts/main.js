@@ -79,4 +79,15 @@ var StorePicker = React.createClass({
   }
 });
 
-ReactDOM.render(<App/>, document.querySelector('#main'));
+/*
+	Routes
+*/
+
+var routes = (
+	<Router>
+		<Route path="/" component={StorePicker} />
+		<Route path="/store/:storeId" component={App} />
+	</Router>
+)
+
+ReactDOM.render(routes, document.querySelector('#main'));
