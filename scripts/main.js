@@ -85,7 +85,7 @@ var StorePicker = React.createClass({
 */
 
 var routes = (
-	<Router>
+	<Router history={createBrowserHistory()}>
 		<Route path="/" component={StorePicker} />
 		<Route path="/store/:storeId" component={App} />
 	</Router>
