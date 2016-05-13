@@ -71,15 +71,18 @@ var Inventory = React.createClass({
 
 var StorePicker = React.createClass({
 
-  render: function(){
-    return (
-    	<form className="store-selector">
-    		<h2>Please Enter a Store</h2>
-    		<input type="text" ref="storeId" defaultValue={h.getFunName()} />
-    		<input type="Submit" />
-    	</form>
-    )
-  }
+	goToStore: function(){
+		console.log('You did it!');
+	},
+  	render: function(){
+    	return (
+    		<form className="store-selector" onSubmit={this.goToStore}>
+    			<h2>Please Enter a Store</h2>
+    			<input type="text" ref="storeId" defaultValue={h.getFunName()} />
+    			<input type="Submit" />
+    		</form>
+    	)
+  	}
 });
 
 /*
