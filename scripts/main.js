@@ -71,7 +71,8 @@ var Inventory = React.createClass({
 
 var StorePicker = React.createClass({
 
-	goToStore: function(){
+	goToStore: function(event){
+		event.preventDefault();
 		console.log('You did it!');
 	},
   	render: function(){
