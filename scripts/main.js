@@ -73,7 +73,8 @@ var StorePicker = React.createClass({
 
 	goToStore: function(event){
 		event.preventDefault();
-		console.log('You did it!');
+		var storeId = this.refs.storeId.value;
+		console.log(storeId);
 	},
   	render: function(){
     	return (
