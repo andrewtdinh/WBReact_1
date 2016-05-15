@@ -13,6 +13,12 @@ var h = require('./helpers');
 */
 
 var App = React.createClass({
+	getInitialState: function(){
+		return {
+			fishes: {},
+			order: {}
+		}
+	},
 	render: function(){
 		return (
 			<div className='catch-of-the-day'>
@@ -41,7 +47,6 @@ var AddFishForm = React.createClass({
 			desc: this.refs.desc.value,
 			image: this.refs.image.value
 		}
-		console.log(fish);
 	},
 	render: function(){
 		return (
