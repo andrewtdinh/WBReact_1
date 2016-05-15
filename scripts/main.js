@@ -32,8 +32,8 @@ var App = React.createClass({
 */
 
 var AddFishForm = React.createClass({
-	createFish: function(){
-		
+	createFish: function(event){
+		event.preventDefault();
 	},
 	render: function(){
 		return (
