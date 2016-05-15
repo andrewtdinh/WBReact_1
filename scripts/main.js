@@ -32,6 +32,9 @@ var App = React.createClass({
 */
 
 var AddFishForm = React.createClass({
+	createFish: function(){
+		
+	},
 	render: function(){
 		return (
 			<form className="fish-edit" onSubmit={this.createFish}>
