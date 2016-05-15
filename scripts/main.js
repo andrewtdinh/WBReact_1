@@ -34,6 +34,14 @@ var App = React.createClass({
 var AddFishForm = React.createClass({
 	createFish: function(event){
 		event.preventDefault();
+		var fish = {
+			name: this.refs.name.value,
+			price: this.refs.price.value,
+			status: this.refs.status.value,
+			desc: this.refs.desc.value,
+			image: this.refs.image.value
+		}
+		console.log(fish);
 	},
 	render: function(){
 		return (
