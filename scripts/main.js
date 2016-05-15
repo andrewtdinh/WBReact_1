@@ -27,6 +27,19 @@ var App = React.createClass({
 });
 
 /*
+	Add Fish Form
+	<AddFishForm />
+*/
+
+var AddFishForm = React.createClass({
+	render: function(){
+		return (
+			<p>Testing Add Fish Form</p>
+		)
+	}
+});
+	
+/*
 	Header
 */
 
