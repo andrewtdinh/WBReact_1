@@ -78,7 +78,10 @@ var Order = React.createClass({
 var Inventory = React.createClass({
 	render: function(){
 		return (
-			<p>Inventory</p>
+			<div>
+				<h2>Inventory</h2>
+				<AddFishForm />
+			</div>
 		)
 	}
 });
