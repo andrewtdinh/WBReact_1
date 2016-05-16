@@ -19,6 +19,11 @@ var App = React.createClass({
 			order: {}
 		}
 	},
+	addFish: function(fish){
+		var timeStamp = (new Date()).getTime();
+		this.state.fishes['fish-' + timeStamp] = fish;
+		this.setState({fishes: this.state.fishes});
+	},
 	render: function(){
 		return (
 			<div className='catch-of-the-day'>
