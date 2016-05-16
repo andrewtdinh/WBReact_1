@@ -31,7 +31,7 @@ var App = React.createClass({
 	},
 	renderFish: function(key){
 		return (
-			<li>Welcome {key}</li>
+			<Fish key={key} index={key} details={this.state.fishes[key]}/>
 		)
 	},
 	render: function(){
