@@ -36,7 +36,7 @@ var App = React.createClass({
 					<Header tagline='Fresh Seafood Market' />
 				</div>
 				<Order />
-				<Inventory addFish={this.addFish}/>
+				<Inventory addFish={this.addFish} loadSamples={this.loadSamples}/>
 			</div>
 		)
 	}
@@ -119,7 +119,7 @@ var Inventory = React.createClass({
 			<div>
 				<h2>Inventory</h2>
 				<AddFishForm {...this.props}/>
-				<button onClick={this.loadSamples}>Load Sample Fishes</button>
+				<button onClick={this.props.loadSamples}>Load Sample Fishes</button>
 			</div>
 		)
 	}
