@@ -25,7 +25,9 @@ var App = React.createClass({
 		this.setState({fishes: this.state.fishes});
 	},
 	loadSamples: function(){
-		return
+		this.setState({
+			fishes: require('./sample-fishes')
+		});
 	},
 	render: function(){
 		return (
