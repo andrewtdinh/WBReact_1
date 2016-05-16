@@ -51,6 +51,21 @@ var App = React.createClass({
 });
 
 /*
+	Fish 
+	<Fish />
+*/
+
+var Fish = React.createClass({
+	render: function(){
+		return (
+			<li className="menu-fish">
+				<img src={this.props.details.image} />
+			</li>
+		)
+	}
+});
+
+/*
 	Add Fish Form
 	<AddFishForm />
 */
