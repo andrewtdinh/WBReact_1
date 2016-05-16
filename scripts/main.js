@@ -34,6 +34,9 @@ var App = React.createClass({
 			<div className='catch-of-the-day'>
 				<div className='menu'>
 					<Header tagline='Fresh Seafood Market' />
+					<ul className="list-of-fishes">
+						{Objects.keys(this.state.fishes).map(this.renderFish)}
+					</ul>
 				</div>
 				<Order />
 				<Inventory addFish={this.addFish} loadSamples={this.loadSamples}/>
