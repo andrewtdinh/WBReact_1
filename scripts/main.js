@@ -68,7 +68,7 @@ var Fish = React.createClass({
 					<span className="price">{h.formatPrice(details.price)}</span>
 				</h3>
 				<p>{details.desc}</p>
-
+				<button disabled={!isAvailable}>{buttonText}</button>
 			</li>
 		)
 	}
