@@ -35,7 +35,7 @@ var App = React.createClass({
 	},
 	renderFish: function(key){
 		return (
-			<Fish key={key} index={key} details={this.state.fishes[key]}/>
+			<Fish key={key} index={key} details={this.state.fishes[key]} addToOrder={this.addToOrder}/>
 		)
 	},
 	render: function(){
