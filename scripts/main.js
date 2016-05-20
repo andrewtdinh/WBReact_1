@@ -61,7 +61,7 @@ var App = React.createClass({
 
 var Fish = React.createClass({
 	onButtonClick: function (){
-		console.log("Going to add the fish: " + this.props.index);
+		this.props.addToOrder(this.props.index);
 	},
 	render: function(){
 		var details = this.props.details;
