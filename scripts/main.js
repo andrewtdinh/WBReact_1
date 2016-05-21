@@ -141,6 +141,11 @@ var Header = React.createClass({
 */
 
 var Order = React.createClass({
+	renderOrder: function(key){
+		return (
+			<li>{key}</li>
+		)
+	},
 	render: function(){
 		var orderIds = Object.keys(this.props.order);
 		var total = orderIds.reduce((prevTotal, key) => {
@@ -158,6 +163,7 @@ var Order = React.createClass({
 			<div className="order-wrap">
 				<h2 className="order-title">Your Order</h2>
 				<ul className="order">
+					{orderIds.map(this.renderOrder)}
 					<li className="total">
 						<strong>Total:</strong>
 						{h.formatPrice(total)}
