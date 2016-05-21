@@ -47,7 +47,7 @@ var App = React.createClass({
 						{Object.keys(this.state.fishes).map(this.renderFish)}
 					</ul>
 				</div>
-				<Order />
+				<Order fishes={this.state.fishes} order={this.state.order} />
 				<Inventory addFish={this.addFish} loadSamples={this.loadSamples}/>
 			</div>
 		)
