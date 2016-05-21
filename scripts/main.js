@@ -141,12 +141,18 @@ var Header = React.createClass({
 */
 
 var Order = React.createClass({
+	var orderIds = Object.keys(this.props.order);
+	var total = orderIds.reduce((prevTotal, key) => {
+		var fish = this.props.fish[key];
+		var count = this.props.order[key];
+		
+	});
 	render: function(){
 		return (
 			<div className="order-wrap">
 				<h2 className="order-title">Your Order</h2>
 				<ul className="order">
-					
+
 				</ul>
 			</div>
 		)
