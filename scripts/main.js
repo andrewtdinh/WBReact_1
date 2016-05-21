@@ -144,7 +144,7 @@ var Order = React.createClass({
 	render: function(){
 		var orderIds = Object.keys(this.props.order);
 		var total = orderIds.reduce((prevTotal, key) => {
-			var fish = this.props.fish[key];
+			var fish = this.props.fishes[key];
 			var count = this.props.order[key];
 			var isAvailable = fish && fish.status === 'available';
 
@@ -158,7 +158,10 @@ var Order = React.createClass({
 			<div className="order-wrap">
 				<h2 className="order-title">Your Order</h2>
 				<ul className="order">
-
+					<li className="total">
+						<strong>Total:</strong>
+						{total}
+					</li>
 				</ul>
 			</div>
 		)
