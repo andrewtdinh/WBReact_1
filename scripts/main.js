@@ -160,7 +160,7 @@ var Order = React.createClass({
 				<ul className="order">
 					<li className="total">
 						<strong>Total:</strong>
-						{total}
+						{h.formatPrice(total)}
 					</li>
 				</ul>
 			</div>
