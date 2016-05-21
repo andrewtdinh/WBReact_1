@@ -143,7 +143,12 @@ var Header = React.createClass({
 var Order = React.createClass({
 	render: function(){
 		return (
-			<p>Order</p>
+			<div className="order-wrap">
+				<h2 className="order-title">Your Order</h2>
+				<ul className="order">
+					
+				</ul>
+			</div>
 		)
 	}
 });
