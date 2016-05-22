@@ -31,6 +31,10 @@ var App = React.createClass({
 			state: 'fishes'
 		});
 	},
+	componentWillUpdate: function(nextProps, nextState){
+		console.log(nextProps);
+		console.log(nextState);
+	},
 	addToOrder: function(key) {
 		this.state.order[key] = this.state.order[key] + 1 || 1;
 		this.setState({order: this.state.order});
