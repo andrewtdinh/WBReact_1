@@ -20,6 +20,7 @@ var Catalyst = require('react-catalyst');
 */
 
 var App = React.createClass({
+	mixins: [Catalyst.LinkedStateMixin],
 	getInitialState: function(){
 		return {
 			fishes: {},
