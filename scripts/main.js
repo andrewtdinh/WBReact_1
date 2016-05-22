@@ -31,7 +31,8 @@ var App = React.createClass({
 			state: 'fishes'
 		});
 
-		var localStorageRef = localStorage['order-' + this.props.params.storeId];
+		// var localStorageRef = localStorage['order-' + this.props.params.storeId]; //This works
+		var localStorageRef = localStorage.getItem('order-' + this.props.params.storeId);
 
 		if (localStorageRef) {
 			this.setState({order: JSON.parse(localStorageRef)});
