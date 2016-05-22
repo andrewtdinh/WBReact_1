@@ -72,7 +72,7 @@ var App = React.createClass({
 					</ul>
 				</div>
 				<Order fishes={this.state.fishes} order={this.state.order} />
-				<Inventory addFish={this.addFish} loadSamples={this.loadSamples} fishes={this.state.fishes} />
+				<Inventory addFish={this.addFish} loadSamples={this.loadSamples} fishes={this.state.fishes} linkState={this.linkState}/>
 			</div>
 		)
 	}
@@ -217,7 +217,7 @@ var Inventory = React.createClass({
 	renderInventory: function(key){
 		return (
 			<div className="fish-edit" key={key}>
-				<input type="text" valueLink={linkState('fishes.' +key+ '.name')} />
+				<input type="text" valueLink={this.props.linkState('fishes.' +key+ '.name')} />
 			</div>
 		)
 	},
