@@ -32,8 +32,7 @@ var App = React.createClass({
 		});
 	},
 	componentWillUpdate: function(nextProps, nextState){
-		console.log(nextProps);
-		console.log(nextState);
+		localStorage.setItem('order-' + this.props.params.storeId, JSON.stringify(nextState.order));
 	},
 	addToOrder: function(key) {
 		this.state.order[key] = this.state.order[key] + 1 || 1;
