@@ -25,6 +25,9 @@ var App = React.createClass({
 			order: {}
 		}
 	},
+	componentDidMount: function(){
+		console.log('Component did mount');
+	},
 	addToOrder: function(key) {
 		this.state.order[key] = this.state.order[key] + 1 || 1;
 		this.setState({order: this.state.order});
