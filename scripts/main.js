@@ -52,6 +52,12 @@ var App = React.createClass({
 		this.state.fishes['fish-' + timeStamp] = fish;
 		this.setState({fishes: this.state.fishes});
 	},
+	removeFish: function(key){
+		this.state.fishes[key] = null;
+		this.setState({
+			fishes: this.state.fishes
+		});
+	},
 	loadSamples: function(){
 		this.setState({
 			fishes: require('./sample-fishes')
