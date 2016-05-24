@@ -223,6 +223,8 @@ var Inventory = React.createClass({
 					<option value="unavailable">Sold Out!</option>
 					<option value="available">Fresh!</option>
 				</select>
+				<textarea valueLink={this.props.linkState('fishes.' +key+ '.desc')}></textarea>
+				<input type="text" valueLink={this.props.linkState('fishes.' +key+ '.image')} />
 			</div>
 		)
 	},
