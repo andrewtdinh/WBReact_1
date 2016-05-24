@@ -218,6 +218,7 @@ var Inventory = React.createClass({
 		return (
 			<div className="fish-edit" key={key}>
 				<input type="text" valueLink={this.props.linkState('fishes.' +key+ '.name')} />
+				<input type="text" valueLink={this.props.linkState('fishes.' +key+ '.price')} />
 			</div>
 		)
 	},
