@@ -231,7 +231,7 @@ var Inventory = React.createClass({
 				</select>
 				<textarea valueLink={this.props.linkState('fishes.' +key+ '.desc')}></textarea>
 				<input type="text" valueLink={this.props.linkState('fishes.' +key+ '.image')} />
-				<button onClick={this.props.removeFish.bind(key)}>Remove Fish</button>
+				<button onClick={this.props.removeFish.bind(null, key)}>Remove Fish</button>
 			</div>
 		)
 	},
