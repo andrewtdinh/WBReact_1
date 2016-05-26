@@ -167,7 +167,7 @@ var Header = React.createClass({
 });
 
 /*
-	Header
+	Order
 */
 
 var Order = React.createClass({
@@ -216,7 +216,7 @@ var Order = React.createClass({
 });
 
 /*
-	Header
+	Inventory
 */
 
 var Inventory = React.createClass({
