@@ -47,6 +47,10 @@ var App = React.createClass({
 		this.state.order[key] = this.state.order[key] + 1 || 1;
 		this.setState({order: this.state.order});
 	},
+	removeFromOrder: function(key){
+		delete this.state.order[key];
+		this.setState({order: this.state.order});
+	},
 	addFish: function(fish){
 		var timeStamp = (new Date()).getTime();
 		this.state.fishes['fish-' + timeStamp] = fish;
