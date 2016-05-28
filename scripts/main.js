@@ -213,13 +213,15 @@ var Order = React.createClass({
 		return (
 			<div className="order-wrap">
 				<h2 className="order-title">Your Order</h2>
-				<ul className="order">
+				
+				<CSSTransitionGroup className="order" component='ul'>
 					{orderIds.map(this.renderOrder)}
 					<li className="total">
 						<strong>Total:</strong>
 						{h.formatPrice(total)}
 					</li>
-				</ul>
+				</CSSTransitionGroup>
+
 			</div>
 		)
 	}
