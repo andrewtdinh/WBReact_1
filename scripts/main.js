@@ -214,7 +214,13 @@ var Order = React.createClass({
 			<div className="order-wrap">
 				<h2 className="order-title">Your Order</h2>
 				
-				<CSSTransitionGroup className="order" component='ul'>
+				<CSSTransitionGroup 
+							className="order" 
+							component='ul'
+							transitionName='order'
+							transitionEnterTimeout={500}
+							transitionLeaveTimeout={500}
+						>
 					{orderIds.map(this.renderOrder)}
 					<li className="total">
 						<strong>Total:</strong>
