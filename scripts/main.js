@@ -196,7 +196,7 @@ var Order = React.createClass({
 						<span key={count}>{count}</span>
 					</CSSTransitionGroup>
 
-					lbs {fish.name} {removeButton}
+					lbs <span> {fish.name}</span> {removeButton}
 				</span>
 				<span className="price">{h.formatPrice(count * fish.price)}</span>
 			</li>
