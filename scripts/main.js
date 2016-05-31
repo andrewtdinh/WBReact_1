@@ -190,7 +190,8 @@ var Order = React.createClass({
 
 		return (
 			<li key={key}>
-				<CSSTransitionGroup component='span' transitionName='count'>
+				<CSSTransitionGroup component='span' transitionName='count'
+					transitionLeaveTimeout={250} transitionEnterTimeout={250}>
 					<span key={count}>{count}</span>
 				</CSSTransitionGroup>
 
