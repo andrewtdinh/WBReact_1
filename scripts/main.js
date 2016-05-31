@@ -171,6 +171,9 @@ var Header = React.createClass({
 				<h3 className='tagline'><span>{this.props.tagline}</span></h3>
 			</header>
 		)
+	},
+	propTypes: {
+		tagline: React.PropTypes.string.isRequired
 	}
 });
 
@@ -196,7 +199,7 @@ var Order = React.createClass({
 						<span key={count}>{count}</span>
 					</CSSTransitionGroup>
 
-					lbs <span> {fish.name}</span> {removeButton}
+					lbs {fish.name} {removeButton}
 				</span>
 				<span className="price">{h.formatPrice(count * fish.price)}</span>
 			</li>
