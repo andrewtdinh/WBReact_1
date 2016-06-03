@@ -272,6 +272,13 @@ var Inventory = React.createClass({
 				<button onClick={this.props.loadSamples}>Load Sample Fishes</button>
 			</div>
 		)
+	},
+	propTypes: {
+		removeFish: React.propTypes.func.isRequired,
+		addFish: React.propTypes.func.isRequired,
+		loadSamples: React.propTypes.func.isRequired,
+		fishes: React.propTypes.object.isRequired,
+		linkState: React.propTypes.func.isRequired
 	}
 });
 
