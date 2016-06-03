@@ -279,11 +279,11 @@ var Inventory = React.createClass({
 		)
 	},
 	propTypes: {
-		removeFish: React.propTypes.func.isRequired,
-		addFish: React.propTypes.func.isRequired,
-		loadSamples: React.propTypes.func.isRequired,
-		fishes: React.propTypes.object.isRequired,
-		linkState: React.propTypes.func.isRequired
+		removeFish: React.PropTypes.func.isRequired,
+		addFish: React.PropTypes.func.isRequired,
+		loadSamples: React.PropTypes.func.isRequired,
+		fishes: React.PropTypes.object.isRequired,
+		linkState: React.PropTypes.func.isRequired
 	}
 });
 
