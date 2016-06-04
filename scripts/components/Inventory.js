@@ -1,7 +1,7 @@
-
 /*
 	Inventory
 */
+import React from 'react';
 
 var Inventory = React.createClass({
 	renderInventory: function(key){
@@ -39,3 +39,5 @@ var Inventory = React.createClass({
 		linkState: React.PropTypes.func.isRequired
 	}
 });
+
+export default Inventory;
