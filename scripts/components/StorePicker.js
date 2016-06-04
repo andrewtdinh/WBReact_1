@@ -4,6 +4,7 @@
 import React from 'react';
 import {History} from 'react-router';
 
+
 var StorePicker = React.createClass({
 	mixins: [History],
 	goToStore: function(event){
