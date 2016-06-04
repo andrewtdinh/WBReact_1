@@ -3,6 +3,7 @@
 	<Fish />
 */
 
+
 var Fish = React.createClass({
 	onButtonClick: function (){
 		this.props.addToOrder(this.props.index);
