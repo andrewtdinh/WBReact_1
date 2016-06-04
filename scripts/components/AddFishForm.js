@@ -1,7 +1,8 @@
 /*
-	Add Fish Form
+	Add Fish Form component
 	<AddFishForm />
 */
+
 import React from 'react';
 
 var AddFishForm = React.createClass({
