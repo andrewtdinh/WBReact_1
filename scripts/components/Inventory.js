@@ -2,6 +2,7 @@
 	Inventory
 */
 import React from 'react';
+import AddFishForm from '../AddFishForm';
 
 var Inventory = React.createClass({
 	renderInventory: function(key){
