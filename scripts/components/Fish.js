@@ -2,7 +2,7 @@
 	Fish component
 	<Fish />
 */
-
+import React from 'react';
 
 var Fish = React.createClass({
 	onButtonClick: function (){
@@ -25,4 +25,6 @@ var Fish = React.createClass({
 		)
 	}
 });
+
+export default Fish;
 
