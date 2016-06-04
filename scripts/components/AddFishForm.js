@@ -2,6 +2,7 @@
 	Add Fish Form
 	<AddFishForm />
 */
+import React from 'react';
 
 var AddFishForm = React.createClass({
 	createFish: function(event){
@@ -33,3 +34,4 @@ var AddFishForm = React.createClass({
 	}
 });
 	
+export default AddFishForm;
