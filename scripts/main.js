@@ -20,6 +20,7 @@ var Catalyst = require('react-catalyst');
 */
 import NotFound from './components/NotFound';
 import StorePicker from './components/StorePicker';
+import Inventory from './components/Inventory';
 
 /*
 	App
