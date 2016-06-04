@@ -1,6 +1,8 @@
 /*
   StorePicker component
 */
+import React from 'react';
+
 var StorePicker = React.createClass({
 	mixins: [History],
 	goToStore: function(event){
@@ -18,3 +20,5 @@ var StorePicker = React.createClass({
     	)
   	}
 });
+
+export default StorePicker;

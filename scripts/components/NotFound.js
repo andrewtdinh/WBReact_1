@@ -1,5 +1,5 @@
 /*
-	Not Found
+	Not Found component
 */
 
 import React from 'react';
