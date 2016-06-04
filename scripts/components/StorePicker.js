@@ -3,7 +3,7 @@
 */
 import React from 'react';
 import {History} from 'react-router';
-
+import h from '../helpers';
 
 var StorePicker = React.createClass({
 	mixins: [History],
