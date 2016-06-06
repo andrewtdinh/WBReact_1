@@ -3,6 +3,8 @@
 	Order component
 */
 
+import React from 'react';
+
 var Order = React.createClass({
 	renderOrder: function(key){
 		var fish = this.props.fishes[key];
@@ -67,3 +69,5 @@ var Order = React.createClass({
 		removeFromOrder:  React.PropTypes.func.isRequired
 	}
 });
+
+export default Order;
