@@ -21,7 +21,7 @@ import StorePicker from './components/StorePicker';
 import Inventory from './components/Inventory';
 import Fish from './components/Fish';
 import Order from './components/Order'
-
+import Header from './components/Header'
 /*
 	App
 */
