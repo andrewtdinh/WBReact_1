@@ -22,6 +22,8 @@ import NotFound from './components/NotFound';
 import StorePicker from './components/StorePicker';
 import Inventory from './components/Inventory';
 import Fish from './components/Fish';
+import Order from './components/Order'
+
 /*
 	App
 */
