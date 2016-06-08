@@ -3,10 +3,10 @@
 */
 import React from 'react';
 import Catalyst from 'react-catalyst';
-import Inventory from './components/Inventory';
-import Fish from './components/Fish';
-import Order from './components/Order';
-import Header from './components/Header';
+import Inventory from './Inventory';
+import Fish from './Fish';
+import Order from './Order';
+import Header from './Header';
 
 var App = React.createClass({
 	mixins: [Catalyst.LinkedStateMixin],
