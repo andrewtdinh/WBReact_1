@@ -1,6 +1,7 @@
 /*
-	Header
+	Header component
 */
+import React from 'react';
 
 var Header = React.createClass({
 	render: function(){
@@ -20,3 +21,5 @@ var Header = React.createClass({
 		tagline: React.PropTypes.string.isRequired
 	}
 });
+
+export default Header;
