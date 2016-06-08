@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-var ReactRouter = require('react-router');
-var Router = ReactRouter.Router;
-var Route = ReactRouter.Route;
+import {Router, Route} from 'react-router';
+
 var createBrowserHistory = require('history/lib/createBrowserHistory')
 
 //Firebase
