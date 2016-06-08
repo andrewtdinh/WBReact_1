@@ -50,7 +50,7 @@ var App = React.createClass({
 	},
 	loadSamples: function(){
 		this.setState({
-			fishes: require('./sample-fishes')
+			fishes: require('../sample-fishes')
 		});
 	},
 	renderFish: function(key){
