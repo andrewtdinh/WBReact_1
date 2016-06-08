@@ -5,10 +5,6 @@ import {Router, Route} from 'react-router';
 
 import {createHistory} from 'history';
 
-//Firebase
-var Rebase = require('re-base');
-var base = Rebase.createClass('https://fishmart.firebaseio.com/');
-
 /*
 	Import components
 */

@@ -8,6 +8,10 @@ import Fish from './Fish';
 import Order from './Order';
 import Header from './Header';
 
+//Firebase
+var Rebase = require('re-base');
+var base = Rebase.createClass('https://fishmart.firebaseio.com/');
+
 var App = React.createClass({
 	mixins: [Catalyst.LinkedStateMixin],
 	getInitialState: function(){
