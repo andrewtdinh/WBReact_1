@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import {Router, Route} from 'react-router';
 
-var createBrowserHistory = require('history/lib/createBrowserHistory')
+import {createHistory} from 'history';
 
 //Firebase
 var Rebase = require('re-base');
@@ -99,7 +99,7 @@ var App = React.createClass({
 */
 
 var routes = (
-	<Router history={createBrowserHistory()}>
+	<Router history={createHistory()}>
 		<Route path="/" component={StorePicker} />
 		<Route path="/store/:storeId" component={App} />
 		<Route path="*" component={NotFound} />
