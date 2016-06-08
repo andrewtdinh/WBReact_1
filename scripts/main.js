@@ -9,7 +9,6 @@ import {createHistory} from 'history';
 var Rebase = require('re-base');
 var base = Rebase.createClass('https://fishmart.firebaseio.com/');
 
-var Catalyst = require('react-catalyst');
 /*
 	Import components
 */

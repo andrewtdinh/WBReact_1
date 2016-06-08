@@ -2,6 +2,7 @@
 	App
 */
 import React from 'react';
+import Catalyst from 'react-catalyst';
 
 var App = React.createClass({
 	mixins: [Catalyst.LinkedStateMixin],
