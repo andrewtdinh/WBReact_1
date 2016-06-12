@@ -5,7 +5,7 @@ import React from 'react';
 import {History} from 'react-router';
 import h from '../helpers';
 
-var StorePicker = React.createClass({
+class StorePicker extends React.Component {
 	mixins: [History],
 	goToStore: function(event){
 		event.preventDefault();
@@ -21,6 +21,6 @@ var StorePicker = React.createClass({
     		</form>
     	)
   	}
-});
+};
 
 export default StorePicker;
