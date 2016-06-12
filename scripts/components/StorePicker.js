@@ -4,9 +4,10 @@
 import React from 'react';
 import {History} from 'react-router';
 import h from '../helpers';
+import reactMixin from 'react-mixin';
 
 class StorePicker extends React.Component {
-	mixins: [History]
+	// mixins: [History]
 
 	goToStore(event){
 		event.preventDefault();
@@ -24,5 +25,7 @@ class StorePicker extends React.Component {
   	)
 	}
 };
+
+reactMixin.onClass(StorePicker, History);
 
 export default StorePicker;
