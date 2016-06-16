@@ -14,7 +14,6 @@ var Rebase = require('re-base');
 var base = Rebase.createClass('https://fishmart.firebaseio.com/');
 
 class App extends React.Component {
-	// mixins: [Catalyst.LinkedStateMixin],
 	getInitialState() {
 		return {
 			fishes: {},
@@ -92,5 +91,7 @@ class App extends React.Component {
 		)
 	}
 };
+
+reactMixin.onClass(App, Catalyst.LinkedStateMixin);
 
 export default App;
