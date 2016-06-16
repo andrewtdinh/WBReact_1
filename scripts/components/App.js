@@ -12,14 +12,15 @@ import Header from './Header';
 var Rebase = require('re-base');
 var base = Rebase.createClass('https://fishmart.firebaseio.com/');
 
-var App = React.createClass({
-	mixins: [Catalyst.LinkedStateMixin],
-	getInitialState: function(){
+class App extends React.Component {
+	// mixins: [Catalyst.LinkedStateMixin],
+	getInitialState() {
 		return {
 			fishes: {},
 			order: {}
 		}
-	},
+	}
+
 	componentDidMount: function(){
 		base.syncState(this.props.params.storeId + '/fishes', {
 			context: this,
@@ -81,6 +82,6 @@ var App = React.createClass({
 			</div>
 		)
 	}
-});
+};
 
 export default App;
