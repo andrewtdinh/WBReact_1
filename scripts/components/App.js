@@ -16,8 +16,11 @@ var base = Rebase.createClass('https://fishmart.firebaseio.com/');
 
 @autobind
 class App extends React.Component {
-	getInitialState() {
-		return {
+
+	constructor() {
+		super();
+
+		this.state = {
 			fishes: {},
 			order: {}
 		}
