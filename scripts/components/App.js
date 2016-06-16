@@ -38,39 +38,45 @@ class App extends React.Component {
 	componentWillUpdate(nextProps, nextState) {
 		localStorage.setItem('order-' + this.props.params.storeId, JSON.stringify(nextState.order));
 	}
-	
-	addToOrder: function(key) {
+
+	addToOrder(key) {
 		this.state.order[key] = this.state.order[key] + 1 || 1;
 		this.setState({order: this.state.order});
-	},
-	removeFromOrder: function(key){
+	}
+
+	removeFromOrder(key) {
 		delete this.state.order[key];
 		this.setState({order: this.state.order});
-	},
-	addFish: function(fish){
+	}
+
+	addFish(fish) {
 		var timeStamp = (new Date()).getTime();
 		this.state.fishes['fish-' + timeStamp] = fish;
 		this.setState({fishes: this.state.fishes});
-	},
-	removeFish: function(key){
+	}
+
+	removeFish(key) {
 		if (confirm('Are you sure you want to remove this fish?')) {
 			this.state.fishes[key] = null;
 			this.setState({
 				fishes: this.state.fishes
 			});
 		}
-	},
-	loadSamples: function(){
+	}
+
+	loadSamples() {
 		this.setState({
 			fishes: require('../sample-fishes')
 		});
-	},
-	renderFish: function(key){
+	} 
+
+	renderFish(key) {
 		return (
 			<Fish key={key} index={key} details={this.state.fishes[key]} addToOrder={this.addToOrder}/>
 		)
-	},
-	render: function(){
+	} 
+
+	render() {
 		return (
 			<div className='catch-of-the-day'>
 				<div className='menu'>
