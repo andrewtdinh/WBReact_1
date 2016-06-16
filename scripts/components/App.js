@@ -7,6 +7,7 @@ import Inventory from './Inventory';
 import Fish from './Fish';
 import Order from './Order';
 import Header from './Header';
+import reactMixin from 'react-mixin';
 
 //Firebase
 var Rebase = require('re-base');
