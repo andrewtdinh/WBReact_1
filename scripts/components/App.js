@@ -8,11 +8,13 @@ import Fish from './Fish';
 import Order from './Order';
 import Header from './Header';
 import reactMixin from 'react-mixin';
+import autobind from 'autobind-decorator';
 
 //Firebase
 var Rebase = require('re-base');
 var base = Rebase.createClass('https://fishmart.firebaseio.com/');
 
+@autobind
 class App extends React.Component {
 	getInitialState() {
 		return {
