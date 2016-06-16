@@ -19,11 +19,8 @@ class Header extends React.Component {
 	}
 }
 
-var Header = React.createClass({
-	,
-	propTypes: {
-		tagline: React.PropTypes.string.isRequired
-	}
-});
+Header.propTypes = {
+	tagline: React.PropTypes.string.isRequired
+}
 
 export default Header;
