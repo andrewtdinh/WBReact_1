@@ -5,7 +5,7 @@
 
 import React from 'react';
 
-var AddFishForm = React.createClass({
+class AddFishForm extends React.Component {
 	createFish: function(event){
 		event.preventDefault();
 		var fish = {
@@ -33,6 +33,6 @@ var AddFishForm = React.createClass({
 			</form>
 		)
 	}
-});
-	
+}
+
 export default AddFishForm;
