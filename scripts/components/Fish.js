@@ -4,7 +4,9 @@
 */
 import React from 'react';
 import h from '../helpers'
+import autobind from 'autobind-decorator';
 
+@autobind
 class Fish extends React.Component {
 	onButtonClick() {
 		this.props.addToOrder(this.props.index);
