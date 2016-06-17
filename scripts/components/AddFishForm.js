@@ -6,7 +6,7 @@
 import React from 'react';
 
 class AddFishForm extends React.Component {
-	createFish: function(event){
+	createFish(event) {
 		event.preventDefault();
 		var fish = {
 			name: this.refs.name.value,
@@ -17,8 +17,9 @@ class AddFishForm extends React.Component {
 		}
 		this.props.addFish(fish);
 		this.refs.fishForm.reset();
-	},
-	render: function(){
+	}
+
+	render() {
 		return (
 			<form className="fish-edit" ref="fishForm" onSubmit={this.createFish}>
 				<input type="text" ref="name" placeholder="Fish Name"/>
