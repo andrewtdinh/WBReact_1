@@ -5,8 +5,10 @@
 
 import React from 'react';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
-import h from '../helpers'
+import h from '../helpers';
+import autobind from 'autobind-decorator';
 
+@autobind
 class Order extends React.Component {
 	renderOrder(key) {
 		var fish = this.props.fishes[key];
