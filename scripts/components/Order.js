@@ -7,7 +7,7 @@ import React from 'react';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 import h from '../helpers'
 
-var Order = React.createClass({
+class Order extends React.Component {
 	renderOrder: function(key){
 		var fish = this.props.fishes[key];
 		var count = this.props.order[key];
@@ -64,8 +64,9 @@ var Order = React.createClass({
 
 			</div>
 		)
-	},
-});
+	}
+}
+
 Order.propTypes = {
 	fishes:  React.PropTypes.object.isRequired,
 	order:  React.PropTypes.object.isRequired,
