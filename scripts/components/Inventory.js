@@ -4,7 +4,9 @@
 
 import React from 'react';
 import AddFishForm from './AddFishForm';
+import autobind from 'autobind-decorator';
 
+@autobind
 class Inventory extends React.Component {
 	renderInventory(key) {
 		return (
