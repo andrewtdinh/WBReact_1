@@ -47,6 +47,8 @@ class Inventory extends React.Component {
 	}
 
 	render() {
+		let logoutButton = <button>Log Out!</button>
+
 		//Check if they aren't logged in 
 		if (!this.state.uid){
 			return (
@@ -59,6 +61,7 @@ class Inventory extends React.Component {
 			return (
 				<div>
 					<p>Sorry, you aren't the owner of this store</p>
+					{logoutButton}
 				</div>
 			)
 		}
