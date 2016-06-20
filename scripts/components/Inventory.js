@@ -11,7 +11,10 @@ class Inventory extends React.Component {
 
 	constructor() {
 		super();
-		
+
+		this.state = {
+			uid: ''
+		}
 	}
 
 	renderLogin() {
