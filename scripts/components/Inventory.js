@@ -8,9 +8,13 @@ import autobind from 'autobind-decorator';
 
 @autobind
 class Inventory extends React.Component {
+
 	renderLogin() {
 		return (
-			
+			<nav className='login'>
+				<h2>Inventory</h2>
+				<p>Sign in to manage your store's inventory</p>
+			</nav>
 		)
 	}
 
