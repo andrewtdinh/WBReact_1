@@ -11,9 +11,12 @@ class Inventory extends React.Component {
 
 	renderLogin() {
 		return (
-			<nav className='login'>
+			<nav className="login">
 				<h2>Inventory</h2>
 				<p>Sign in to manage your store's inventory</p>
+				<button className="github">Log In with Github</button>
+				<button className="facebook">Log In with Facebook</button>
+				<button className="twitter">Log In with Twitter</button>
 			</nav>
 		)
 	}
