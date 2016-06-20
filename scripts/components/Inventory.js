@@ -56,7 +56,11 @@ class Inventory extends React.Component {
 
 		//Check if they aren't owner of the current store
 		if (this.state.uid !== this.state.owner){
-			
+			return (
+				<div>
+					<p>Sorry, you aren't the owner of this store</p>
+				</div>
+			)
 		}
 
 		return (
