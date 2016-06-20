@@ -5,6 +5,9 @@
 import React from 'react';
 import AddFishForm from './AddFishForm';
 import autobind from 'autobind-decorator';
+import Firebase from 'firebase';
+
+const ref = new Firebase("https://fishmart.firebaseio.com/");
 
 @autobind
 class Inventory extends React.Component {
@@ -70,7 +73,7 @@ class Inventory extends React.Component {
 			<div>
 				<h2>Inventory</h2>
 				{logoutButton}
-				
+
 				{Object.keys(this.props.fishes).map(this.renderInventory)}
 
 				<AddFishForm {...this.props}/>
