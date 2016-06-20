@@ -8,6 +8,13 @@ import autobind from 'autobind-decorator';
 
 @autobind
 class Inventory extends React.Component {
+	renderLogin() {
+		return (
+			
+		)
+	}
+
+
 	renderInventory(key) {
 		return (
 			<div className="fish-edit" key={key}>
