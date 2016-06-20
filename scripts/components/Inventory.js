@@ -69,7 +69,8 @@ class Inventory extends React.Component {
 		return (
 			<div>
 				<h2>Inventory</h2>
-
+				{logoutButton}
+				
 				{Object.keys(this.props.fishes).map(this.renderInventory)}
 
 				<AddFishForm {...this.props}/>
