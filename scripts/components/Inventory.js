@@ -20,6 +20,10 @@ class Inventory extends React.Component {
 		}
 	}
 
+	authenticate(provider) {
+		console.log('Trying to authenticate with ' + provider);
+	}
+
 	renderLogin() {
 		return (
 			<nav className="login">
@@ -28,6 +32,7 @@ class Inventory extends React.Component {
 				<button className="github" onClick={this.authenticate.bind(this, 'github')}>Log In with Github</button>
 				<button className="facebook" onClick={this.authenticate.bind(this, 'facebook')}>Log In with Facebook</button>
 				<button className="twitter" onClick={this.authenticate.bind(this, 'twitter')}>Log In with Twitter</button>
+				<button className="google" onClick={this.authenticate.bind(this, 'google')}>Log In with Google Plus</button>
 			</nav>
 		)
 	}
