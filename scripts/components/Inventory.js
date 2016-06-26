@@ -29,6 +29,8 @@ class Inventory extends React.Component {
 			console.err(err);
 			return;
 		}
+
+		const storeRef = ref.child(this.props.params.storeID);
 	}
 
 	renderLogin() {
