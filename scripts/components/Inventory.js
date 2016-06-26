@@ -34,13 +34,14 @@ class Inventory extends React.Component {
 		storeRef.on('value', (snapshot)=>{
 			var data = snapshot.val() || {};
 
+			//claim it as our own if there is no store owner already
 			if (!data.owner) {
-				//claim it as our own
 				storeRef.set({
 					owner: authData.uid
 				});
-
 			}
+
+			
 		});
 	}
 
