@@ -33,6 +33,11 @@ class Inventory extends React.Component {
 		const storeRef = ref.child(this.props.params.storeId);
 		storeRef.on('value', (snapshot)=>{
 			var data = snapshot.val() || {};
+
+			if (!data.owner) {
+				//claim it as our own
+				
+			}
 		});
 	}
 
