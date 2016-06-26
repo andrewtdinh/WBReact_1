@@ -30,8 +30,10 @@ class Inventory extends React.Component {
 			return;
 		}
 
-		console.log(this.props.params.storeId);
 		const storeRef = ref.child(this.props.params.storeId);
+		storeRef.on('value', (snapshot)=>{
+			var data = snapshot.val() || {};
+		});
 	}
 
 	renderLogin() {
