@@ -25,7 +25,10 @@ class Inventory extends React.Component {
 	}
 
 	authHandler(err, authData){
-		console.log('I am in the authHandler');
+		if(err){
+			console.err(err);
+			return;
+		}
 	}
 
 	renderLogin() {
