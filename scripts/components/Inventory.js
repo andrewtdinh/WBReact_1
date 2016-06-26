@@ -36,7 +36,10 @@ class Inventory extends React.Component {
 
 			if (!data.owner) {
 				//claim it as our own
-				
+				storeRef.set({
+					owner: authData.uid
+				});
+
 			}
 		});
 	}
