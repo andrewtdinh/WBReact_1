@@ -99,7 +99,7 @@ class Inventory extends React.Component {
 	}
 
 	render() {
-		let logoutButton = <button onClick={this.unauth}>Log Out!</button>
+		let logoutButton = <button onClick={this.logout}>Log Out!</button>
 
 		//Check if they aren't logged in 
 		if (!this.state.uid){
