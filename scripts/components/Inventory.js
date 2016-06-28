@@ -24,6 +24,11 @@ class Inventory extends React.Component {
 		ref.authWithOAuthPopup(provider, this.authHandler); 
 	}
 
+	componentWillMount(){
+		console.log('Checking to see if we can log in');
+		var token = localStorage.token;
+	}
+
 	authHandler(err, authData){
 		if(err){
 			console.err(err);
