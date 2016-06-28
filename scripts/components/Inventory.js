@@ -41,7 +41,11 @@ class Inventory extends React.Component {
 				});
 			}
 
-			
+			//update our state to reflect the current store owner and user
+			this.setStage({
+				uid: authData.uid,
+				owner: data.owner || authData.uid	
+			});
 		});
 	}
 
