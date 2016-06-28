@@ -31,7 +31,7 @@ class Inventory extends React.Component {
 		}
 
 		// Save the login token in the browser
-		localStore.setItem('token', authData.token);
+		localStorage.setItem('token', authData.token);
 
 		const storeRef = ref.child(this.props.params.storeId);
 		storeRef.on('value', (snapshot)=>{
