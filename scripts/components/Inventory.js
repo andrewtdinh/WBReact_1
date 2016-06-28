@@ -26,7 +26,7 @@ class Inventory extends React.Component {
 
 	componentWillMount(){
 		console.log('Checking to see if we can log in');
-		var token = localStorage.token;
+		var token = localStorage.getItem('token');
 	}
 
 	authHandler(err, authData){
