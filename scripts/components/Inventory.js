@@ -32,6 +32,11 @@ class Inventory extends React.Component {
 		}
 	}
 
+	logout(){
+		ref.unauth();
+		localStorage.removeItem('token');
+	}
+
 	authHandler(err, authData){
 		if(err){
 			console.err(err);
