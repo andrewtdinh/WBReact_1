@@ -53,14 +53,14 @@ class Inventory extends React.Component {
 		storeRef.on('value', (snapshot)=>{
 			var data = snapshot.val() || {};
 
-			//claim it as our own if there is no store owner already
+			// claim it as our own if there is no store owner already
 			if (!data.owner) {
 				storeRef.set({
 					owner: authData.uid
 				});
 			}
 
-			//update our state to reflect the current store owner and user
+			// update our state to reflect the current store owner and user
 			this.setState({
 				uid: authData.uid,
 				owner: data.owner || authData.uid	
@@ -101,14 +101,14 @@ class Inventory extends React.Component {
 	render() {
 		let logoutButton = <button onClick={this.logout}>Log Out!</button>
 
-		//Check if they aren't logged in 
+		// Check if they aren't logged in 
 		if (!this.state.uid){
 			return (
 				<div>{this.renderLogin()}</div>
 			)
 		}
 
-		//Check if they aren't owner of the current store
+		// Check if they aren't owner of the current store
 		if (this.state.uid !== this.state.owner){
 			return (
 				<div>
